@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 27 14:21:10 2018
+# Process ID: 8148
+# Current directory: C:/Vivado_projects/Geyser_mem_ver1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10936 C:\Vivado_projects\Geyser_mem_ver1.1\Geyser_mem_ver1.1.xpr
+# Log file: C:/Vivado_projects/Geyser_mem_ver1.1/vivado.log
+# Journal file: C:/Vivado_projects/Geyser_mem_ver1.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/source_code/buscon_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 767.984 ; gain = 107.195
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 27 14:21:45 2018...

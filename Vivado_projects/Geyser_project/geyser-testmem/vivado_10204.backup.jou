@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Nov 24 14:20:24 2017
+# Process ID: 10204
+# Current directory: C:/Vivado_projects/geyser-testmem
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11116 C:\Vivado_projects\geyser-testmem\geyser-testmem.xpr
+# Log file: C:/Vivado_projects/geyser-testmem/vivado.log
+# Journal file: C:/Vivado_projects/geyser-testmem\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/geyser-testmem/geyser-testmem.xpr
+open_bd_design {C:/Vivado_projects/geyser-testmem/geyser-testmem.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]
+endgroup
+set_property  ip_repo_paths  {c:/Vivado_projects/edti_testmem c:/Vivado_projects/source_code/geyser_mem c:/Vivado_projects/Reset_IP c:/Vivado_projects/Geyser_bram_interface c:/Vivado_projects/source_code/Buscon_IP c:/Vivado_projects/ip_disabling_byte_addressing c:/Vivado_projects/trans_addr_14to11 C:/Vivado_projects/IRQ_interface} [current_project]
+update_ip_catalog
+open_bd_design {C:/Vivado_projects/geyser-testmem/geyser-testmem.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:IRQ_Interface:1.0 IRQ_Interface_0
+endgroup
+set_property location {2 584 769} [get_bd_cells IRQ_Interface_0]
+set_property location {4 1383 691} [get_bd_cells IRQ_Interface_0]
+delete_bd_objs [get_bd_nets Bram_Interface_2_RdData]
+connect_bd_net [get_bd_pins BusController16_1/shared_RdData] [get_bd_pins IRQ_Interface_0/RdData]
+delete_bd_objs [get_bd_nets Bram_Interface_2_bram_addr]
+connect_bd_net [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins IRQ_Interface_0/bram_addr]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins IRQ_Interface_0/Clock]
+disconnect_bd_net /clk_wiz_0_clk_out2 [get_bd_pins Bram_Interface_2/Clock]
+connect_bd_net [get_bd_pins BusController16_1/shared_addr] [get_bd_pins IRQ_Interface_0/Address]
+connect_bd_net [get_bd_pins BusController16_1/shared_ByteEnable] [get_bd_pins IRQ_Interface_0/ByteEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_OEn] [get_bd_pins IRQ_Interface_0/OEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WEn] [get_bd_pins IRQ_Interface_0/WEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WrData] [get_bd_pins IRQ_Interface_0/WrData]
+connect_bd_net [get_bd_pins BusController16_1/shared_en] [get_bd_pins IRQ_Interface_0/Strobe]
+delete_bd_objs [get_bd_nets blk_mem_gen_2_douta]
+startgroup
+connect_bd_net [get_bd_pins blk_mem_gen_2/douta] [get_bd_pins IRQ_Interface_0/dout]
+connect_bd_net [get_bd_pins blk_mem_gen_2/douta] [get_bd_pins Bram_Interface_2/dout]
+endgroup
+disconnect_bd_net /blk_mem_gen_2_douta [get_bd_pins Bram_Interface_2/dout]
+delete_bd_objs [get_bd_nets Bram_Interface_2_we]
+connect_bd_net [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins IRQ_Interface_0/we]
+delete_bd_objs [get_bd_nets Bram_Interface_2_clk]
+delete_bd_objs [get_bd_nets Bram_Interface_2_en]
+delete_bd_objs [get_bd_nets Bram_Interface_2_din]
+connect_bd_net [get_bd_pins blk_mem_gen_2/ena] [get_bd_pins IRQ_Interface_0/en]
+connect_bd_net [get_bd_pins IRQ_Interface_0/din] [get_bd_pins blk_mem_gen_2/dina]
+connect_bd_net [get_bd_pins blk_mem_gen_2/clka] [get_bd_pins IRQ_Interface_0/clk]
+disconnect_bd_net /BusController16_1_shared_addr [get_bd_pins Bram_Interface_2/Address]
+disconnect_bd_net /BusController16_1_shared_ByteEnable [get_bd_pins Bram_Interface_2/ByteEn]
+disconnect_bd_net /BusController16_1_shared_OEn [get_bd_pins Bram_Interface_2/OEn]
+disconnect_bd_net /BusController16_1_shared_WEn [get_bd_pins Bram_Interface_2/WEn]
+disconnect_bd_net /BusController16_1_shared_WrData [get_bd_pins Bram_Interface_2/WrData]
+disconnect_bd_net /BusController16_1_shared_en [get_bd_pins Bram_Interface_2/Strobe]
+delete_bd_objs [get_bd_cells Bram_Interface_2]
+connect_bd_net [get_bd_pins IRQ_Interface_0/irq] [get_bd_pins processing_system7_0/IRQ_F2P]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Vivado_projects/source_code/Geyser_mem_01/COE/btst2.coe}] [get_bd_cells blk_mem_gen_2]
+endgroup
+startgroup
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:IRQ_Interface:1.0 IRQ_Interface_1
+endgroup
+set_property location {4 1442 1054} [get_bd_cells IRQ_Interface_1]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins IRQ_Interface_1/Clock]
+connect_bd_net [get_bd_pins BusController16_1/shared_addr] [get_bd_pins IRQ_Interface_1/Address]
+connect_bd_net [get_bd_pins BusController16_1/shared_ByteEnable] [get_bd_pins IRQ_Interface_1/ByteEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_OEn] [get_bd_pins IRQ_Interface_1/OEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WEn] [get_bd_pins IRQ_Interface_1/WEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WrData] [get_bd_pins IRQ_Interface_1/WrData]
+connect_bd_net [get_bd_pins BusController16_1/shared_en] [get_bd_pins IRQ_Interface_1/Strobe]
+delete_bd_objs [get_bd_nets IRQ_Interface_0_RdData]
+connect_bd_net [get_bd_pins IRQ_Interface_1/RdData] [get_bd_pins BusController16_1/shared_RdData]
+set_property location {5 1966 1084} [get_bd_cells blk_mem_gen_2]
+connect_bd_net [get_bd_pins IRQ_Interface_1/dout] [get_bd_pins blk_mem_gen_2/douta]
+disconnect_bd_net /blk_mem_gen_2_douta [get_bd_pins IRQ_Interface_0/dout]
+delete_bd_objs [get_bd_nets IRQ_Interface_0_bram_addr]
+delete_bd_objs [get_bd_nets IRQ_Interface_0_din] [get_bd_nets IRQ_Interface_0_we] [get_bd_nets IRQ_Interface_0_clk] [get_bd_nets IRQ_Interface_0_en] [get_bd_nets IRQ_Interface_0_irq] [get_bd_cells IRQ_Interface_0]
+connect_bd_net [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins IRQ_Interface_1/bram_addr]
+connect_bd_net [get_bd_pins IRQ_Interface_1/clk] [get_bd_pins blk_mem_gen_2/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins IRQ_Interface_1/din]
+connect_bd_net [get_bd_pins IRQ_Interface_1/en] [get_bd_pins blk_mem_gen_2/ena]
+connect_bd_net [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins IRQ_Interface_1/we]
+connect_bd_net [get_bd_pins IRQ_Interface_1/irq] [get_bd_pins processing_system7_0/IRQ_F2P]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Vivado_projects/geyser-testmem/geyser-testmem.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/geyser-testmem/geyser-testmem.sdk/design_1_wrapper.hdf
+
+open_bd_design {C:/Vivado_projects/geyser-testmem/geyser-testmem.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/geyser-testmem/geyser-testmem.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/geyser-testmem/geyser-testmem.sdk/design_1_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {10}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins ila_0/probe9] [get_bd_pins IRQ_Interface_1/irq]
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {16384}] [get_bd_cells ila_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/geyser-testmem/geyser-testmem.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/geyser-testmem/geyser-testmem.sdk/design_1_wrapper.hdf
+
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property -dict [list CONFIG.NUM_PORTS {1}] [get_bd_cells xlconcat_0]
+set_property location {3.5 1205 193} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins IRQ_Interface_1/irq] [get_bd_pins xlconcat_0/In0]
+disconnect_bd_net /IRQ_Interface_1_irq [get_bd_pins processing_system7_0/IRQ_F2P]
+startgroup
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins processing_system7_0/IRQ_F2P]
+endgroup
+startgroup
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/geyser-testmem/geyser-testmem.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/geyser-testmem/geyser-testmem.sdk/design_1_wrapper.hdf
+
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:IRQ_Interface:1.0 IRQ_Interface_0
+endgroup
+set_property location {3.5 1109 981} [get_bd_cells IRQ_Interface_0]
+connect_bd_net [get_bd_pins BusController16_1/shared_addr] [get_bd_pins IRQ_Interface_0/Address]
+connect_bd_net [get_bd_pins IRQ_Interface_0/ByteEn] [get_bd_pins BusController16_1/shared_ByteEnable]
+connect_bd_net [get_bd_pins BusController16_1/shared_OEn] [get_bd_pins IRQ_Interface_0/OEn]
+connect_bd_net [get_bd_pins IRQ_Interface_0/WEn] [get_bd_pins BusController16_1/shared_WEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WrData] [get_bd_pins IRQ_Interface_0/WrData]
+connect_bd_net [get_bd_pins IRQ_Interface_0/Strobe] [get_bd_pins BusController16_1/shared_en]
+delete_bd_objs [get_bd_nets IRQ_Interface_1_RdData]
+connect_bd_net [get_bd_pins BusController16_1/shared_RdData] [get_bd_pins IRQ_Interface_0/RdData]
+set_property location {5.5 1684 1015} [get_bd_cells blk_mem_gen_2]
+delete_bd_objs [get_bd_nets IRQ_Interface_1_bram_addr]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins IRQ_Interface_0/Clock]
+delete_bd_objs [get_bd_nets IRQ_Interface_1_we] [get_bd_nets IRQ_Interface_1_clk] [get_bd_nets IRQ_Interface_1_din] [get_bd_nets IRQ_Interface_1_en] [get_bd_nets blk_mem_gen_2_douta] [get_bd_cells IRQ_Interface_1]
+connect_bd_net [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins IRQ_Interface_0/bram_addr]
+connect_bd_net [get_bd_pins IRQ_Interface_0/clk] [get_bd_pins blk_mem_gen_2/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins IRQ_Interface_0/din]
+connect_bd_net [get_bd_pins IRQ_Interface_0/en] [get_bd_pins blk_mem_gen_2/ena]
+connect_bd_net [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins IRQ_Interface_0/we]
+connect_bd_net [get_bd_pins IRQ_Interface_0/dout] [get_bd_pins blk_mem_gen_2/douta]
+connect_bd_net [get_bd_pins IRQ_Interface_0/irq] [get_bd_pins ila_0/probe9]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:IRQ_Interface:1.0 IRQ_Interface_1
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins IRQ_Interface_1/Clock]
+connect_bd_net [get_bd_pins BusController16_1/shared_addr] [get_bd_pins IRQ_Interface_1/Address]
+connect_bd_net [get_bd_pins BusController16_1/shared_ByteEnable] [get_bd_pins IRQ_Interface_1/ByteEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_OEn] [get_bd_pins IRQ_Interface_1/OEn]
+connect_bd_net [get_bd_pins IRQ_Interface_1/WEn] [get_bd_pins BusController16_1/shared_WEn]
+connect_bd_net [get_bd_pins BusController16_1/shared_WrData] [get_bd_pins IRQ_Interface_1/WrData]
+connect_bd_net [get_bd_pins IRQ_Interface_1/Strobe] [get_bd_pins BusController16_1/shared_en]
+delete_bd_objs [get_bd_nets IRQ_Interface_0_RdData] [get_bd_nets IRQ_Interface_0_bram_addr] [get_bd_nets IRQ_Interface_0_clk] [get_bd_nets IRQ_Interface_0_din] [get_bd_nets blk_mem_gen_2_douta] [get_bd_nets IRQ_Interface_0_en] [get_bd_nets IRQ_Interface_0_we] [get_bd_cells IRQ_Interface_0]
+connect_bd_net [get_bd_pins BusController16_1/shared_RdData] [get_bd_pins IRQ_Interface_1/RdData]
+connect_bd_net [get_bd_pins blk_mem_gen_2/addra] [get_bd_pins IRQ_Interface_1/bram_addr]
+connect_bd_net [get_bd_pins IRQ_Interface_1/clk] [get_bd_pins blk_mem_gen_2/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins IRQ_Interface_1/din]
+connect_bd_net [get_bd_pins IRQ_Interface_1/en] [get_bd_pins blk_mem_gen_2/ena]
+connect_bd_net [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins IRQ_Interface_1/we]
+connect_bd_net [get_bd_pins IRQ_Interface_1/dout] [get_bd_pins blk_mem_gen_2/douta]
+connect_bd_net [get_bd_pins IRQ_Interface_1/irq] [get_bd_pins ila_0/probe9]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/geyser-testmem/geyser-testmem.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/geyser-testmem/geyser-testmem.sdk/design_1_wrapper.hdf
+

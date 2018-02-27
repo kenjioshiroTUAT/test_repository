@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Dec 11 11:26:25 2017
+# Process ID: 4132
+# Current directory: C:/Vivado_projects/axi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4516 C:\Vivado_projects\axi_test\axi_test.xpr
+# Log file: C:/Vivado_projects/axi_test/vivado.log
+# Journal file: C:/Vivado_projects/axi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/axi_test/axi_test.xpr
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property display_name BusController16_v1_1 [ipx::current_core]
+set_property description BusController16_v1_1 [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property display_name BusController16_v1_2 [ipx::current_core]
+set_property description BusController16_v1_2 [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property display_name BusController16_v1_3 [ipx::current_core]
+set_property description BusController16_v1_3 [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property display_name BusController16_v1_4 [ipx::current_core]
+set_property description BusController16_v1_4 [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml

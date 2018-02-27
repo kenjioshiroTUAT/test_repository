@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 20 14:29:38 2018
+# Process ID: 8576
+# Current directory: C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+INFO: [Netlist 29-17] Analyzing 468 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1037.941 ; gain = 489.313
+Finished Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper.xdc]
+Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper_late.xdc]
+Finished Parsing XDC File [C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/.Xil/Vivado-8576-/dcp/design_1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1063.547 ; gain = 9.078
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1063.547 ; gain = 9.078
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 246 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 216 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 30 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2015.4 (64-bit) build 1412921
+open_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1063.547 ; gain = 875.742
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[0] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[10] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[11] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[12] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[13] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[14] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[15] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[1] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[2] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[3] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[4] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[5] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[6] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[7] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[8] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+WARNING: [DRC 23-20] Rule violation (IOSR-1) IOB set reset sharing - IO Out_Da[9] connects to flops which have these design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoL[0][15]_i_1_n_0, design_1_i/BusController16_1/inst/B16AXI32/GWriteFIFO/FifoU[0][15]_i_1_n_0 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 16 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1439.641 ; gain = 376.094
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 20 14:30:37 2018...

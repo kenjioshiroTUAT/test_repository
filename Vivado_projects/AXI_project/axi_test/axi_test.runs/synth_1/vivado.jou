@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Jan 05 11:33:20 2018
+# Process ID: 10752
+# Current directory: C:/Vivado_projects/axi_test/axi_test.runs/synth_1
+# Command line: vivado.exe -log BusController16.vds -mode batch -messageDb vivado.pb -notrace -source BusController16.tcl
+# Log file: C:/Vivado_projects/axi_test/axi_test.runs/synth_1/BusController16.vds
+# Journal file: C:/Vivado_projects/axi_test/axi_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BusController16.tcl -notrace

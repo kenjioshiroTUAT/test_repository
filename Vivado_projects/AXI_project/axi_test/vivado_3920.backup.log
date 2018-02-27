@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Dec 13 13:58:22 2017
+# Process ID: 3920
+# Current directory: C:/Vivado_projects/axi_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12896 C:\Vivado_projects\axi_test\axi_test.xpr
+# Log file: C:/Vivado_projects/axi_test/vivado.log
+# Journal file: C:/Vivado_projects/axi_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/axi_test/axi_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Vivado_projects/source_code/axi_test_code'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+   c:/Vivado_projects/source_code/Geyser_mem_00
+   c:/Vivado_projects/source_code/Geyser_mem_01
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 725.430 ; gain = 142.531
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Vivado_projects/source_code/axi_test_code'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 743.430 ; gain = 14.402
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 13 14:01:34 2017...
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Vivado_projects/source_code/axi_test_code'. ''c:/Vivado_projects/source_code/axi_test_code' is not valid: Path is contained within another repository.'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+   c:/Vivado_projects/source_code/Geyser_mem_00
+   c:/Vivado_projects/source_code/Geyser_mem_01
+0
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 792.613 ; gain = 17.922
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Vivado_projects/source_code/axi_test_code'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 792.613 ; gain = 17.922
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 13 15:14:07 2017...
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 792.613 ; gain = 0.000
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Vivado_projects/source_code/axi_test_code'. ''c:/Vivado_projects/source_code/axi_test_code' is not valid: Path is contained within another repository.'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+   c:/Vivado_projects/source_code/Geyser_mem_00
+   c:/Vivado_projects/source_code/Geyser_mem_01
+0
+add_files -norecurse C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/axi_write_test.dat
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/axi32if.v" into library work [C:/Vivado_projects/source_code/axi_test_code/axi32if.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/GC-SOTB/b16rom.v" into library work [C:/Vivado_projects/source_code/axi_test_code/GC-SOTB/b16rom.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/bus16if.v" into library work [C:/Vivado_projects/source_code/axi_test_code/bus16if.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/buscon16.v" into library work [C:/Vivado_projects/source_code/axi_test_code/buscon16.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/buscon16axi32.v" into library work [C:/Vivado_projects/source_code/axi_test_code/buscon16axi32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Vivado_projects/source_code/axi_test_code/fifowhw.v" into library work [C:/Vivado_projects/source_code/axi_test_code/fifowhw.v:1]
+[Wed Dec 13 15:54:18 2017] Launched synth_1...
+Run output will be captured here: C:/Vivado_projects/axi_test/axi_test.runs/synth_1/runme.log
+ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Vivado_projects/source_code/axi_test_code'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 13 15:55:30 2017...
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Vivado_projects/source_code/axi_test_code'. ''c:/Vivado_projects/source_code/axi_test_code' is not valid: Path is contained within another repository.'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:BusController16:1.0'. The one found in IP location 'c:/vivado_projects/ip_dir/axi_buscon16' will take precedence over the same IP in locations: 
+   c:/Vivado_projects/source_code
+   c:/Vivado_projects/source_code/axi_test_code
+   c:/Vivado_projects/source_code/Buscon_IP
+   c:/Vivado_projects/source_code/Geyser_mem_00
+   c:/Vivado_projects/source_code/Geyser_mem_01
+0

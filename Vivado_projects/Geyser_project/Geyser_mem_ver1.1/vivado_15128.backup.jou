@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Oct 20 14:50:31 2017
+# Process ID: 15128
+# Current directory: C:/Vivado_projects/Geyser_mem_ver1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13612 C:\Vivado_projects\Geyser_mem_ver1.1\Geyser_mem_ver1.1.xpr
+# Log file: C:/Vivado_projects/Geyser_mem_ver1.1/vivado.log
+# Journal file: C:/Vivado_projects/Geyser_mem_ver1.1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr
+ipx::open_ipxact_file C:/Vivado_projects/source_code/Geyser_mem_01/component.xml
+ipx::package_project -root_dir C:/Vivado_projects/source_code/Geyser_mem_01 -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01
+ipx::package_project -root_dir C:/Vivado_projects/source_code/Geyser_mem_01 -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01
+ipx::package_project -root_dir C:/Vivado_projects/source_code/Geyser_mem_01 -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01

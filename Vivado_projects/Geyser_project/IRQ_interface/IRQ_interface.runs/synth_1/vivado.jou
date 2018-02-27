@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Dec 01 13:26:31 2017
+# Process ID: 15256
+# Current directory: C:/Vivado_projects/IRQ_interface/IRQ_interface.runs/synth_1
+# Command line: vivado.exe -log Bram_Interface.vds -mode batch -messageDb vivado.pb -notrace -source Bram_Interface.tcl
+# Log file: C:/Vivado_projects/IRQ_interface/IRQ_interface.runs/synth_1/Bram_Interface.vds
+# Journal file: C:/Vivado_projects/IRQ_interface/IRQ_interface.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Bram_Interface.tcl -notrace

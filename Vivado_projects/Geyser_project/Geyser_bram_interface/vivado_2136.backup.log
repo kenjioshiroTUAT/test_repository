@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 28 16:16:13 2017
+# Process ID: 2136
+# Current directory: C:/Vivado_projects/Geyser_bram_interface
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10124 C:\Vivado_projects\Geyser_bram_interface\Geyser_bram_interface.xpr
+# Log file: C:/Vivado_projects/Geyser_bram_interface/vivado.log
+# Journal file: C:/Vivado_projects/Geyser_bram_interface\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/Geyser_bram_interface/Geyser_bram_interface.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/Geyser_bram_interface/Geyser_bram_interface.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 763.492 ; gain = 190.941

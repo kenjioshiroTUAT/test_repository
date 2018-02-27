@@ -1,0 +1,625 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Dec 26 14:40:44 2017
+# Process ID: 14016
+# Current directory: C:/Vivado_projects/axi_ps_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14288 C:\Vivado_projects\axi_ps_test\axi_ps_test.xpr
+# Log file: C:/Vivado_projects/axi_ps_test/vivado.log
+# Journal file: C:/Vivado_projects/axi_ps_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Vivado_projects/axi_ps_test/axi_ps_test.xpr
+open_bd_design {C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BusController16:1.0 BusController16_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.2 clk_wiz_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.USE_DYN_RECONFIG {true} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.MMCM_CLKOUT2_DIVIDE {10} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {130.958} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {130.958} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {130.958} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_SDIO_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_DOUT_DEFAULT {0x00000001} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_pins clk_wiz_0/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_gpio_0/GPIO]
+endgroup
+undo
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_USE_S_AXI_GP0 {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins clk_wiz_0/s_axi_lite]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property location {2 465 625} [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0_axi_periph/M01_ACLK]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0_axi_periph/S00_ACLK]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0_axi_periph/ACLK]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins processing_system7_0_axi_periph/M01_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins processing_system7_0_axi_periph/S00_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins processing_system7_0_axi_periph/ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins processing_system7_0/S_AXI_GP0_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins BusController16_0/AXIClock]
+disconnect_bd_net /rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins clk_wiz_0/s_axi_aresetn]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins BusController16_0/Reset_]
+create_bd_port -dir I Strobe
+create_bd_port -dir I Write
+create_bd_port -dir I Blk
+create_bd_port -dir I -from 15 -to 0 Out_Da
+create_bd_port -dir I -from 3 -to 0 ByteEn
+regenerate_bd_layout
+set_property location {1.5 402 120} [get_bd_cells BusController16_0]
+connect_bd_net [get_bd_ports Blk] [get_bd_pins BusController16_0/Block]
+connect_bd_net [get_bd_ports ByteEn] [get_bd_pins BusController16_0/ByteEnable]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins BusController16_0/OutDA]
+connect_bd_net [get_bd_ports Strobe] [get_bd_pins BusController16_0/Strobe]
+connect_bd_net [get_bd_ports Write] [get_bd_pins BusController16_0/Write]
+regenerate_bd_layout
+create_bd_port -dir O clk_0
+create_bd_port -dir O -type clk clk_1
+create_bd_port -dir O reset_n
+create_bd_port -dir O nmi_n
+create_bd_port -dir O tlb_en
+create_bd_port -dir O bus_err
+create_bd_port -dir O hard_int
+create_bd_port -dir O cache_en
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins BusController16_0/reset_n]
+connect_bd_net [get_bd_ports nmi_n] [get_bd_pins BusController16_0/nmi_n]
+set_property location {1318 539} [get_bd_ports tlb_en]
+connect_bd_net [get_bd_ports tlb_en] [get_bd_pins BusController16_0/tlb_en]
+connect_bd_net [get_bd_ports bus_err] [get_bd_pins BusController16_0/bus_err]
+connect_bd_net [get_bd_ports hard_int] [get_bd_pins BusController16_0/hard_int]
+connect_bd_net [get_bd_ports cache_en] [get_bd_pins BusController16_0/cache_en]
+create_bd_port -dir O Ready
+connect_bd_net [get_bd_ports Ready] [get_bd_pins BusController16_0/Ready]
+create_bd_port -dir I -from 15 -to 0 In_Da
+delete_bd_objs [get_bd_ports In_Da]
+create_bd_port -dir O -from 15 -to 0 In_Da
+connect_bd_net [get_bd_ports In_Da] [get_bd_pins BusController16_0/InD]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {15.000} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {30.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {60.000} CONFIG.MMCM_CLKOUT1_DIVIDE {30} CONFIG.MMCM_CLKOUT2_DIVIDE {9} CONFIG.CLKOUT1_JITTER {202.775} CONFIG.CLKOUT1_PHASE_ERROR {105.461} CONFIG.CLKOUT2_JITTER {176.981} CONFIG.CLKOUT2_PHASE_ERROR {105.461} CONFIG.CLKOUT3_JITTER {137.681} CONFIG.CLKOUT3_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins BusController16_0/Clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins BusController16_0/CoreClk]
+connect_bd_net [get_bd_ports clk_1] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins clk_wiz_0/clk_out2]
+regenerate_bd_layout
+set_property location {2 540 858} [get_bd_cells BusController16_0]
+set_property location {3 952 787} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARREADY] [get_bd_pins BusController16_0/AXIARReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWREADY] [get_bd_pins BusController16_0/AXIAWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BVALID] [get_bd_pins BusController16_0/AXIBValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RLAST] [get_bd_pins BusController16_0/AXIRLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RVALID] [get_bd_pins BusController16_0/AXIRValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WREADY] [get_bd_pins BusController16_0/AXIWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BRESP] [get_bd_pins BusController16_0/AXIBResp]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RRESP] [get_bd_pins BusController16_0/AXIRResp]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RDATA] [get_bd_pins BusController16_0/AXIRData]
+connect_bd_net [get_bd_pins BusController16_0/AXIARValid] [get_bd_pins processing_system7_0/S_AXI_GP0_ARVALID]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWVALID] [get_bd_pins BusController16_0/AXIAWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BREADY] [get_bd_pins BusController16_0/AXIBReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RREADY] [get_bd_pins BusController16_0/AXIRReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WLAST] [get_bd_pins BusController16_0/AXIWLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WVALID] [get_bd_pins BusController16_0/AXIWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARBURST] [get_bd_pins BusController16_0/AXIARBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARSIZE] [get_bd_pins BusController16_0/AXIARSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWBURST] [get_bd_pins BusController16_0/AXIAWBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWSIZE] [get_bd_pins BusController16_0/AXIAWSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARADDR] [get_bd_pins BusController16_0/AXIARAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWADDR] [get_bd_pins BusController16_0/AXIAWAddr]
+set_property location {2 545 1141} [get_bd_cells BusController16_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WDATA] [get_bd_pins BusController16_0/AXIWData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARLEN] [get_bd_pins BusController16_0/AXIARLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWLEN] [get_bd_pins BusController16_0/AXIAWLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WSTRB] [get_bd_pins BusController16_0/AXIWStrb]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.0 ila_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {30} CONFIG.C_MONITOR_TYPE {Native} CONFIG.C_ENABLE_ILA_AXI_MON {false}] [get_bd_cells ila_0]
+endgroup
+set_property location {0.5 -177 643} [get_bd_cells ila_0]
+set_property location {0.5 -349 733} [get_bd_cells BusController16_0]
+set_property location {2 -1 702} [get_bd_cells ila_0]
+set_property location {0.5 -505 728} [get_bd_cells ila_0]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins ila_0/clk]
+set_property location {2.5 504 831} [get_bd_cells ila_0]
+set_property location {5.5 1963 646} [get_bd_cells ila_0]
+set_property location {1.5 192 659} [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins BusController16_0/InD] [get_bd_pins ila_0/probe1]
+disconnect_bd_net /Out_Da_1 [get_bd_pins ila_0/clk]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins ila_0/probe0]
+set_property location {1.5 71 649} [get_bd_cells ila_0]
+startgroup
+connect_bd_net [get_bd_pins BusController16_0/Ready] [get_bd_pins ila_0/probe2]
+endgroup
+connect_bd_net [get_bd_ports Strobe] [get_bd_pins ila_0/probe3]
+connect_bd_net [get_bd_ports Write] [get_bd_pins ila_0/probe4]
+connect_bd_net [get_bd_ports Blk] [get_bd_pins ila_0/probe5]
+connect_bd_net [get_bd_pins BusController16_0/AXIARAddr] [get_bd_pins ila_0/probe6]
+connect_bd_net [get_bd_pins BusController16_0/AXIARValid] [get_bd_pins ila_0/probe7]
+connect_bd_net [get_bd_pins BusController16_0/AXIRReady] [get_bd_pins ila_0/probe8]
+connect_bd_net [get_bd_pins BusController16_0/AXIARLen] [get_bd_pins ila_0/probe9]
+connect_bd_net [get_bd_pins BusController16_0/AXIARSize] [get_bd_pins ila_0/probe10]
+set_property location {2.5 525 503} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARREADY] [get_bd_pins ila_0/probe11]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RVALID] [get_bd_pins ila_0/probe12]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RLAST] [get_bd_pins ila_0/probe13]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RRESP] [get_bd_pins ila_0/probe14]
+connect_bd_net [get_bd_pins BusController16_0/AXIAWAddr] [get_bd_pins ila_0/probe15]
+connect_bd_net [get_bd_pins BusController16_0/AXIWData] [get_bd_pins ila_0/probe16]
+connect_bd_net [get_bd_pins BusController16_0/AXIWValid] [get_bd_pins ila_0/probe17]
+connect_bd_net [get_bd_pins BusController16_0/AXIAWValid] [get_bd_pins ila_0/probe18]
+connect_bd_net [get_bd_pins BusController16_0/AXIAWBurst] [get_bd_pins ila_0/probe19]
+connect_bd_net [get_bd_pins BusController16_0/AXIAWLen] [get_bd_pins ila_0/probe20]
+connect_bd_net [get_bd_pins BusController16_0/AXIAWSize] [get_bd_pins ila_0/probe21]
+connect_bd_net [get_bd_pins BusController16_0/AXIWLast] [get_bd_pins ila_0/probe22]
+connect_bd_net [get_bd_pins BusController16_0/AXIWStrb] [get_bd_pins ila_0/probe23]
+connect_bd_net [get_bd_pins BusController16_0/AXIBReady] [get_bd_pins ila_0/probe24]
+set_property location {2 57 313} [get_bd_cells ila_0]
+set_property location {2.5 194 363} [get_bd_cells ila_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RDATA] [get_bd_pins ila_0/probe25]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWREADY] [get_bd_pins ila_0/probe26]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BVALID] [get_bd_pins ila_0/probe28]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WREADY] [get_bd_pins ila_0/probe29]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BRESP] [get_bd_pins ila_0/probe27]
+set_property location {1.5 -137 657} [get_bd_cells ila_0]
+startgroup
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {16} CONFIG.C_PROBE0_WIDTH {16}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE10_WIDTH {3} CONFIG.C_PROBE9_WIDTH {4} CONFIG.C_PROBE6_WIDTH {32}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE16_WIDTH {32} CONFIG.C_PROBE15_WIDTH {32} CONFIG.C_PROBE14_WIDTH {2}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE21_WIDTH {3} CONFIG.C_PROBE20_WIDTH {4} CONFIG.C_PROBE19_WIDTH {2}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE25_WIDTH {32} CONFIG.C_PROBE23_WIDTH {4}] [get_bd_cells ila_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE27_WIDTH {2}] [get_bd_cells ila_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins ila_0/clk]
+regenerate_bd_layout
+validate_bd_design
+disconnect_bd_net /rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins processing_system7_0_axi_periph/M00_ARESETN]
+disconnect_bd_net /proc_sys_reset_0_peripheral_aresetn [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN]
+connect_bd_net [get_bd_pins processing_system7_0_axi_periph/M01_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+validate_bd_design
+save_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {60.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {51.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {68.000} CONFIG.MMCM_CLKOUT1_DIVIDE {34} CONFIG.MMCM_CLKOUT2_DIVIDE {17} CONFIG.CLKOUT1_JITTER {325.072} CONFIG.CLKOUT1_PHASE_ERROR {300.046} CONFIG.CLKOUT2_JITTER {284.425} CONFIG.CLKOUT2_PHASE_ERROR {300.046} CONFIG.CLKOUT3_JITTER {254.384} CONFIG.CLKOUT3_PHASE_ERROR {300.046}] [get_bd_cells clk_wiz_0]
+endgroup
+place_ports clk_1 L14
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_1]]
+place_ports reset_n L15
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_n]]
+place_ports {ByteEn[3]} H18
+place_ports {ByteEn[2]} J18
+place_ports {ByteEn[1]} K18
+place_ports {ByteEn[0]} K17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ByteEn[3]} {ByteEn[2]} {ByteEn[1]} {ByteEn[0]}]]
+place_ports {In_Da[15]} J14
+place_ports {In_Da[14]} K14
+place_ports {In_Da[13]} G20
+place_ports {In_Da[12]} G19
+place_ports {In_Da[11]} G18
+place_ports {In_Da[10]} G17
+place_ports {In_Da[9]} H17
+place_ports {In_Da[8]} H16
+place_ports {In_Da[7]} L17
+place_ports {In_Da[6]} L16
+place_ports {In_Da[5]} M18
+place_ports {In_Da[4]} M17
+place_ports {In_Da[3]} L20
+place_ports {In_Da[2]} D19
+place_ports {In_Da[1]} J19
+place_ports {In_Da[1]} J16
+place_ports {In_Da[0]} K16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {In_Da[15]} {In_Da[14]} {In_Da[13]} {In_Da[12]} {In_Da[11]} {In_Da[10]} {In_Da[9]} {In_Da[8]} {In_Da[7]} {In_Da[6]} {In_Da[5]} {In_Da[4]} {In_Da[3]} {In_Da[2]} {In_Da[1]} {In_Da[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Out_Da[15]} {Out_Da[14]} {Out_Da[13]} {Out_Da[12]} {Out_Da[11]} {Out_Da[10]} {Out_Da[9]} {Out_Da[8]} {Out_Da[7]} {Out_Da[6]} {Out_Da[5]} {Out_Da[4]} {Out_Da[3]} {Out_Da[2]} {Out_Da[1]} {Out_Da[0]}]]
+place_ports {Out_Da[15]} V15
+place_ports {Out_Da[14]} U18
+place_ports {Out_Da[13]} N20
+place_ports {Out_Da[12]} V20
+place_ports {Out_Da[11]} V16
+startgroup
+set_property package_pin "" [get_ports [list  {Out_Da[6]}]]
+place_ports {Out_Da[9]} W18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {Out_Da[2]}]]
+place_ports {Out_Da[8]} P15
+endgroup
+place_ports {Out_Da[7]} T9
+startgroup
+set_property package_pin "" [get_ports [list  Ready]]
+place_ports {Out_Da[6]} T5
+endgroup
+place_ports {Out_Da[5]} J15
+place_ports {Out_Da[4]} A20
+place_ports {Out_Da[3]} D18
+place_ports {Out_Da[2]} E18
+place_ports {Out_Da[1]} E19
+place_ports {Out_Da[0]} L19
+set_property is_loc_fixed true [get_ports [list  {Out_Da[10]}]]
+place_ports Blk P14
+place_ports bus_err F20
+place_ports cache_en J20
+place_ports clk_0 G15
+place_ports hard_int J19
+place_ports nmi_n H20
+place_ports Ready H15
+place_ports Strobe W14
+place_ports tlb_en F19
+place_ports Write M20
+set_property IOSTANDARD LVCMOS33 [get_ports [list Blk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list bus_err]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list cache_en]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list hard_int]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list nmi_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Ready]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Strobe]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list tlb_en]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Write]]
+file mkdir C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/constrs_1/new
+close [ open C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/constrs_1/new/constrains1.xdc w ]
+add_files -fileset constrs_1 C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/constrs_1/new/constrains1.xdc
+set_property target_constrs_file C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/constrs_1/new/constrains1.xdc [current_fileset -constrset]
+save_constraints -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_bd_design {C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/design_1.bd}
+file mkdir C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BusController16:1.0 BusController16_1
+endgroup
+set_property location {1 242 985} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_ports Strobe] [get_bd_pins BusController16_1/Strobe]
+connect_bd_net [get_bd_ports Write] [get_bd_pins BusController16_1/Write]
+connect_bd_net [get_bd_ports Blk] [get_bd_pins BusController16_1/Block]
+connect_bd_net [get_bd_ports ByteEn] [get_bd_pins BusController16_1/ByteEnable]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins BusController16_1/OutDA]
+set_property location {2.5 901 1319} [get_bd_cells BusController16_1]
+set_property location {5.5 2704 1424} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins BusController16_1/Reset_]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins BusController16_1/Clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins BusController16_1/CoreClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins BusController16_1/AXIClock]
+set_property location {1.5 757 831} [get_bd_cells BusController16_1]
+set_property location {1 273 316} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARREADY] [get_bd_pins BusController16_1/AXIARReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RVALID] [get_bd_pins BusController16_1/AXIRValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RLAST] [get_bd_pins BusController16_1/AXIRLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RDATA] [get_bd_pins BusController16_1/AXIRData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RRESP] [get_bd_pins BusController16_1/AXIRResp]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWREADY] [get_bd_pins BusController16_1/AXIAWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WREADY] [get_bd_pins BusController16_1/AXIWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BVALID] [get_bd_pins BusController16_1/AXIBValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BRESP] [get_bd_pins BusController16_1/AXIBResp]
+set_property location {1.5 695 1396} [get_bd_cells BusController16_1]
+set_property location {1.5 493 1309} [get_bd_cells BusController16_1]
+set_property location {2.5 1035 916} [get_bd_cells processing_system7_0]
+disconnect_bd_net /BusController16_0_AXIARValid [get_bd_pins BusController16_0/AXIARValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARVALID] [get_bd_pins BusController16_1/AXIARValid]
+disconnect_bd_net /BusController16_0_AXIARAddr [get_bd_pins BusController16_0/AXIARAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARADDR] [get_bd_pins BusController16_1/AXIARAddr]
+disconnect_bd_net /BusController16_0_AXIARLen [get_bd_pins BusController16_0/AXIARLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARLEN] [get_bd_pins BusController16_1/AXIARLen]
+disconnect_bd_net /BusController16_0_AXIARSize [get_bd_pins BusController16_0/AXIARSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARSIZE] [get_bd_pins BusController16_1/AXIARSize]
+delete_bd_objs [get_bd_nets BusController16_0_AXIARBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARBURST] [get_bd_pins BusController16_1/AXIARBurst]
+disconnect_bd_net /BusController16_0_AXIRReady [get_bd_pins BusController16_0/AXIRReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RREADY] [get_bd_pins BusController16_1/AXIRReady]
+disconnect_bd_net /BusController16_0_AXIAWValid [get_bd_pins BusController16_0/AXIAWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWVALID] [get_bd_pins BusController16_1/AXIAWValid]
+disconnect_bd_net /BusController16_0_AXIAWAddr [get_bd_pins BusController16_0/AXIAWAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWADDR] [get_bd_pins BusController16_1/AXIAWAddr]
+disconnect_bd_net /BusController16_0_AXIAWLen [get_bd_pins BusController16_0/AXIAWLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWLEN] [get_bd_pins BusController16_1/AXIAWLen]
+disconnect_bd_net /BusController16_0_AXIAWSize [get_bd_pins BusController16_0/AXIAWSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWSIZE] [get_bd_pins BusController16_1/AXIAWSize]
+disconnect_bd_net /BusController16_0_AXIAWBurst [get_bd_pins BusController16_0/AXIAWBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWBURST] [get_bd_pins BusController16_1/AXIAWBurst]
+disconnect_bd_net /BusController16_0_AXIWValid [get_bd_pins BusController16_0/AXIWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WVALID] [get_bd_pins BusController16_1/AXIWValid]
+disconnect_bd_net /BusController16_0_AXIWLast [get_bd_pins BusController16_0/AXIWLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WLAST] [get_bd_pins BusController16_1/AXIWLast]
+disconnect_bd_net /BusController16_0_AXIWData [get_bd_pins BusController16_0/AXIWData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WDATA] [get_bd_pins BusController16_1/AXIWData]
+disconnect_bd_net /BusController16_0_AXIWStrb [get_bd_pins BusController16_0/AXIWStrb]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WSTRB] [get_bd_pins BusController16_1/AXIWStrb]
+disconnect_bd_net /BusController16_0_AXIBReady [get_bd_pins BusController16_0/AXIBReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BREADY] [get_bd_pins BusController16_1/AXIBReady]
+delete_bd_objs [get_bd_nets BusController16_0_cache_en] [get_bd_nets BusController16_0_bus_err] [get_bd_nets BusController16_0_tlb_en] [get_bd_nets BusController16_0_reset_n] [get_bd_nets BusController16_0_hard_int] [get_bd_nets BusController16_0_nmi_n] [get_bd_cells BusController16_0]
+set_property location {5 2041 925} [get_bd_cells BusController16_1]
+set_property location {3.5 2246 910} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_ports cache_en] [get_bd_pins BusController16_1/cache_en]
+connect_bd_net [get_bd_ports bus_err] [get_bd_pins BusController16_1/bus_err]
+connect_bd_net [get_bd_ports nmi_n] [get_bd_pins BusController16_1/nmi_n]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins BusController16_1/reset_n]
+connect_bd_net [get_bd_ports hard_int] [get_bd_pins BusController16_1/hard_int]
+connect_bd_net [get_bd_ports tlb_en] [get_bd_pins BusController16_1/tlb_en]
+connect_bd_net [get_bd_ports Ready] [get_bd_pins BusController16_1/Ready]
+connect_bd_net [get_bd_ports In_Da] [get_bd_pins BusController16_1/InD]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+endgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+startgroup
+set_property -dict [list CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_0]
+endgroup
+set_property -dict [list CONFIG.Write_Depth_A {32768}] [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_addr_a] [get_bd_pins blk_mem_gen_0/addra]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins axi_bram_ctrl_0/bram_clk_a]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a] [get_bd_pins blk_mem_gen_0/dina]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins axi_bram_ctrl_0/bram_rddata_a]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_en_a] [get_bd_pins blk_mem_gen_0/ena]
+connect_bd_net [get_bd_pins blk_mem_gen_0/wea] [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+regenerate_bd_layout
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BusController16:1.0 BusController16_0
+endgroup
+set_property location {1 264 1137} [get_bd_cells BusController16_0]
+set_property location {0.5 94 874} [get_bd_cells BusController16_0]
+connect_bd_net [get_bd_ports Strobe] [get_bd_pins BusController16_0/Strobe]
+connect_bd_net [get_bd_ports Write] [get_bd_pins BusController16_0/Write]
+set_property location {-87 579} [get_bd_ports Blk]
+connect_bd_net [get_bd_ports Blk] [get_bd_pins BusController16_0/Block]
+connect_bd_net [get_bd_ports ByteEn] [get_bd_pins BusController16_0/ByteEnable]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins BusController16_0/OutDA]
+set_property location {2 454 1096} [get_bd_cells BusController16_0]
+set_property location {5 2453 587} [get_bd_cells BusController16_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins BusController16_0/Clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins BusController16_0/CoreClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins BusController16_0/AXIClock]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins BusController16_0/Reset_]
+set_property location {2.5 1345 669} [get_bd_cells BusController16_0]
+set_property location {1 156 985} [get_bd_cells BusController16_0]
+set_property location {2 636 635} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARREADY] [get_bd_pins BusController16_0/AXIARReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RVALID] [get_bd_pins BusController16_0/AXIRValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RLAST] [get_bd_pins BusController16_0/AXIRLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RDATA] [get_bd_pins BusController16_0/AXIRData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RRESP] [get_bd_pins BusController16_0/AXIRResp]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWREADY] [get_bd_pins BusController16_0/AXIAWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WREADY] [get_bd_pins BusController16_0/AXIWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BVALID] [get_bd_pins BusController16_0/AXIBValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BRESP] [get_bd_pins BusController16_0/AXIBResp]
+disconnect_bd_net /BusController16_0_AXIARValid [get_bd_pins BusController16_1/AXIARValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARVALID] [get_bd_pins BusController16_0/AXIARValid]
+disconnect_bd_net /BusController16_0_AXIARAddr [get_bd_pins BusController16_1/AXIARAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARADDR] [get_bd_pins BusController16_0/AXIARAddr]
+disconnect_bd_net /BusController16_0_AXIARLen [get_bd_pins BusController16_1/AXIARLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARLEN] [get_bd_pins BusController16_0/AXIARLen]
+disconnect_bd_net /BusController16_0_AXIARSize [get_bd_pins BusController16_1/AXIARSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARSIZE] [get_bd_pins BusController16_0/AXIARSize]
+delete_bd_objs [get_bd_nets BusController16_1_AXIARBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARBURST] [get_bd_pins BusController16_0/AXIARBurst]
+disconnect_bd_net /BusController16_0_AXIRReady [get_bd_pins BusController16_1/AXIRReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RREADY] [get_bd_pins BusController16_0/AXIRReady]
+disconnect_bd_net /BusController16_0_AXIAWValid [get_bd_pins BusController16_1/AXIAWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWVALID] [get_bd_pins BusController16_0/AXIAWValid]
+disconnect_bd_net /BusController16_0_AXIAWAddr [get_bd_pins BusController16_1/AXIAWAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWADDR] [get_bd_pins BusController16_0/AXIAWAddr]
+disconnect_bd_net /BusController16_0_AXIAWLen [get_bd_pins BusController16_1/AXIAWLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWLEN] [get_bd_pins BusController16_0/AXIAWLen]
+disconnect_bd_net /BusController16_0_AXIAWSize [get_bd_pins BusController16_1/AXIAWSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWSIZE] [get_bd_pins BusController16_0/AXIAWSize]
+disconnect_bd_net /BusController16_0_AXIAWBurst [get_bd_pins BusController16_1/AXIAWBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWBURST] [get_bd_pins BusController16_0/AXIAWBurst]
+disconnect_bd_net /BusController16_0_AXIWValid [get_bd_pins BusController16_1/AXIWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WVALID] [get_bd_pins BusController16_0/AXIWValid]
+disconnect_bd_net /BusController16_0_AXIWLast [get_bd_pins BusController16_1/AXIWLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WLAST] [get_bd_pins BusController16_0/AXIWLast]
+disconnect_bd_net /BusController16_0_AXIWData [get_bd_pins BusController16_1/AXIWData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WDATA] [get_bd_pins BusController16_0/AXIWData]
+disconnect_bd_net /BusController16_0_AXIWStrb [get_bd_pins BusController16_1/AXIWStrb]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WSTRB] [get_bd_pins BusController16_0/AXIWStrb]
+disconnect_bd_net /BusController16_0_AXIBReady [get_bd_pins BusController16_1/AXIBReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BREADY] [get_bd_pins BusController16_0/AXIBReady]
+delete_bd_objs [get_bd_nets BusController16_1_cache_en] [get_bd_nets BusController16_1_bus_err] [get_bd_nets BusController16_1_nmi_n] [get_bd_nets BusController16_1_reset_n] [get_bd_nets BusController16_1_hard_int] [get_bd_nets BusController16_1_tlb_en] [get_bd_cells BusController16_1]
+set_property location {1 158 900} [get_bd_cells BusController16_0]
+set_property location {4.5 2784 460} [get_bd_cells BusController16_0]
+set_property location {4.5 3062 788} [get_bd_cells BusController16_0]
+connect_bd_net [get_bd_ports In_Da] [get_bd_pins BusController16_0/InD]
+connect_bd_net [get_bd_ports Ready] [get_bd_pins BusController16_0/Ready]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins BusController16_0/reset_n]
+connect_bd_net [get_bd_ports cache_en] [get_bd_pins BusController16_0/cache_en]
+connect_bd_net [get_bd_ports tlb_en] [get_bd_pins BusController16_0/tlb_en]
+connect_bd_net [get_bd_ports bus_err] [get_bd_pins BusController16_0/bus_err]
+connect_bd_net [get_bd_ports nmi_n] [get_bd_pins BusController16_0/nmi_n]
+connect_bd_net [get_bd_ports hard_int] [get_bd_pins BusController16_0/hard_int]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {8192}] [get_bd_cells blk_mem_gen_0]
+endgroup
+validate_bd_design
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BusController16:1.0 BusController16_1
+endgroup
+set_property location {1 181 306} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_ports Strobe] [get_bd_pins BusController16_1/Strobe]
+set_property location {1 125 596} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_ports Write] [get_bd_pins BusController16_1/Write]
+connect_bd_net [get_bd_ports Blk] [get_bd_pins BusController16_1/Block]
+connect_bd_net [get_bd_ports ByteEn] [get_bd_pins BusController16_1/ByteEnable]
+connect_bd_net [get_bd_ports Out_Da] [get_bd_pins BusController16_1/OutDA]
+set_property location {6 2460 476} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins BusController16_1/Reset_]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins BusController16_1/Clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins BusController16_1/CoreClk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out3] [get_bd_pins BusController16_1/AXIClock]
+set_property location {1 372 1202} [get_bd_cells BusController16_1]
+set_property location {1.5 698 894} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARREADY] [get_bd_pins BusController16_1/AXIARReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RVALID] [get_bd_pins BusController16_1/AXIRValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RLAST] [get_bd_pins BusController16_1/AXIRLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RDATA] [get_bd_pins BusController16_1/AXIRData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RRESP] [get_bd_pins BusController16_1/AXIRResp]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWREADY] [get_bd_pins BusController16_1/AXIAWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WREADY] [get_bd_pins BusController16_1/AXIWReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BVALID] [get_bd_pins BusController16_1/AXIBValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BRESP] [get_bd_pins BusController16_1/AXIBResp]
+disconnect_bd_net /BusController16_0_AXIARValid [get_bd_pins BusController16_0/AXIARValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARVALID] [get_bd_pins BusController16_1/AXIARValid]
+disconnect_bd_net /BusController16_0_AXIARAddr [get_bd_pins BusController16_0/AXIARAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARADDR] [get_bd_pins BusController16_1/AXIARAddr]
+disconnect_bd_net /BusController16_0_AXIARLen [get_bd_pins BusController16_0/AXIARLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARLEN] [get_bd_pins BusController16_1/AXIARLen]
+disconnect_bd_net /BusController16_0_AXIARSize [get_bd_pins BusController16_0/AXIARSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARSIZE] [get_bd_pins BusController16_1/AXIARSize]
+delete_bd_objs [get_bd_nets BusController16_0_AXIARBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ARBURST] [get_bd_pins BusController16_1/AXIARBurst]
+disconnect_bd_net /BusController16_0_AXIRReady [get_bd_pins BusController16_0/AXIRReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_RREADY] [get_bd_pins BusController16_1/AXIRReady]
+disconnect_bd_net /BusController16_0_AXIAWValid [get_bd_pins BusController16_0/AXIAWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWVALID] [get_bd_pins BusController16_1/AXIAWValid]
+disconnect_bd_net /BusController16_0_AXIAWAddr [get_bd_pins BusController16_0/AXIAWAddr]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWADDR] [get_bd_pins BusController16_1/AXIAWAddr]
+disconnect_bd_net /BusController16_0_AXIAWLen [get_bd_pins BusController16_0/AXIAWLen]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWLEN] [get_bd_pins BusController16_1/AXIAWLen]
+disconnect_bd_net /BusController16_0_AXIAWSize [get_bd_pins BusController16_0/AXIAWSize]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWSIZE] [get_bd_pins BusController16_1/AXIAWSize]
+disconnect_bd_net /BusController16_0_AXIAWBurst [get_bd_pins BusController16_0/AXIAWBurst]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_AWBURST] [get_bd_pins BusController16_1/AXIAWBurst]
+disconnect_bd_net /BusController16_0_AXIWValid [get_bd_pins BusController16_0/AXIWValid]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WVALID] [get_bd_pins BusController16_1/AXIWValid]
+disconnect_bd_net /BusController16_0_AXIWLast [get_bd_pins BusController16_0/AXIWLast]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WLAST] [get_bd_pins BusController16_1/AXIWLast]
+disconnect_bd_net /BusController16_0_AXIWData [get_bd_pins BusController16_0/AXIWData]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WDATA] [get_bd_pins BusController16_1/AXIWData]
+disconnect_bd_net /BusController16_0_AXIWStrb [get_bd_pins BusController16_0/AXIWStrb]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_WSTRB] [get_bd_pins BusController16_1/AXIWStrb]
+disconnect_bd_net /BusController16_0_AXIBReady [get_bd_pins BusController16_0/AXIBReady]
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_BREADY] [get_bd_pins BusController16_1/AXIBReady]
+delete_bd_objs [get_bd_nets BusController16_0_reset_n] [get_bd_nets BusController16_0_cache_en] [get_bd_nets BusController16_0_tlb_en] [get_bd_nets BusController16_0_hard_int] [get_bd_nets BusController16_0_bus_err] [get_bd_nets BusController16_0_nmi_n] [get_bd_cells BusController16_0]
+set_property location {6 2738 893} [get_bd_cells BusController16_1]
+connect_bd_net [get_bd_ports In_Da] [get_bd_pins BusController16_1/InD]
+connect_bd_net [get_bd_ports Ready] [get_bd_pins BusController16_1/Ready]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins BusController16_1/reset_n]
+connect_bd_net [get_bd_ports cache_en] [get_bd_pins BusController16_1/cache_en]
+connect_bd_net [get_bd_ports tlb_en] [get_bd_pins BusController16_1/tlb_en]
+connect_bd_net [get_bd_ports bus_err] [get_bd_pins BusController16_1/bus_err]
+connect_bd_net [get_bd_ports nmi_n] [get_bd_pins BusController16_1/AXIWData]
+undo
+connect_bd_net [get_bd_ports nmi_n] [get_bd_pins BusController16_1/nmi_n]
+connect_bd_net [get_bd_ports hard_int] [get_bd_pins BusController16_1/hard_int]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {8192}] [get_bd_cells ila_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+
+open_bd_design {C:/Vivado_projects/axi_ps_test/axi_ps_test.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C0_I2C0_IO {MIO 14 .. 15}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+file copy -force C:/Vivado_projects/axi_ps_test/axi_ps_test.runs/impl_1/design_1_wrapper.sysdef C:/Vivado_projects/axi_ps_test/axi_ps_test.sdk/design_1_wrapper.hdf
+

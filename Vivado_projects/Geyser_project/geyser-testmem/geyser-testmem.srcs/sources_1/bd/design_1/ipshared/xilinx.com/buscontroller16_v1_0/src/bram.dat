@@ -1,0 +1,18 @@
+0000
+0000 // 0 nop 
+000a
+2401 // 4 li $at,10
+bfc1
+3c02 // 8 lui $v0,0xbfc1
+ffff
+2021 // c addi $at,$at,-1
+0000
+ac41 // 10 sw $at,0($v0)
+fffd
+1420 // 14 bnez $at,c
+0000
+0000 // 18 nop $at,c
+ffff
+1020 // 1c beqz $at,1c
+0000
+0000

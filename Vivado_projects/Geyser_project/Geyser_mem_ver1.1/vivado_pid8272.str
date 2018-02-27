@@ -1,0 +1,414 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 8272
+
+Current time: 	9/12/17 2:26:38 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=MS UI Gothic,name=MS UI Gothic,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Oshiro Kenji
+User home directory: C:/Users/Oshiro Kenji
+User working directory: C:/Vivado_projects/Geyser_mem_ver1.1
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+Vivado preferences path: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	156 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 494 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Vivado_projects\Geyser_mem_ver1.1\Geyser_mem_ver1.1.xpr. Version: Vivado v2015.4 
+// bF:g (cq:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr 
+// [GUI Memory]: 34 MB (+32911kb) [00:00:04]
+// [Engine Memory]: 409 MB (+276871kb) [00:00:04]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 37 MB (+1180kb) [00:00:05]
+// [Engine Memory]: 440 MB (+12020kb) [00:00:05]
+// [GUI Memory]: 52 MB (+14465kb) [00:00:05]
+// [GUI Memory]: 55 MB (+13kb) [00:00:06]
+// [Engine Memory]: 491 MB (+29787kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Geyser_mem_ver1.1; location: C:/Vivado_projects/Geyser_mem_ver1.1; part: xc7z020clg400-1
+// [Engine Memory]: 518 MB (+2221kb) [00:00:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 518 MB. GUI used memory: 35 MB. Current time: 9/12/17 2:26:39 PM JST
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom_18kb.v)]", 2, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom_18kb.v)]", 2, false, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+dismissFileChooser();
+// 'dj' command handler elapsed time: 5 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom_18kb.v)]", 2, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom_18kb.v)]", 2, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem.v)]", 3, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem.v)]", 3, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// [GUI Memory]: 59 MB (+1803kb) [00:00:40]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem.v)]", 3, false, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("C:/Vivado_projects/source_code/Geyser_mem_01/b16testmem_init.v");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files C:/Vivado_projects/source_code/Geyser_mem_01/b16testmem_init.v -to_files C:/Vivado_projects/source_code/Geyser_mem_01/b16testmem.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Vivado_projects/source_code/Geyser_mem_01/b16testmem.v' with file 'C:/Vivado_projects/source_code/Geyser_mem_01/b16testmem_init.v'. 
+// bF:g (cq:JFrame):  Replace File : addNotify
+dismissDialog("Replace File"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("b16testmem.v", 146, 289); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 68 MB (+6073kb) [00:00:52]
+// [GUI Memory]: 72 MB (+435kb) [00:00:53]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition.. Note: All sources to be packaged must be located at or below the specified directory."); // b:a (a:H, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 18 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/Geyser_mem_01 -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 540 MB. GUI used memory: 42 MB. Current time: 9/12/17 2:27:54 PM JST
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_2 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property description BusController16_v1_2 [ipx::current_core] 
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_WARNING_MESSAGES, "1 warning"); // i:l (JPanel:JComponent, cq:JFrame)
+// [Engine Memory]: 558 MB (+15211kb) [00:01:33]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: LOAD_FEATURE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_INFO_MESSAGES, "2 info messages"); // i:l (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 17 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ao:v (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "Customization Parameters ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "Customization Parameters", 0, false); // S:aw (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "Customization Parameters ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "Customization Parameters", 0, false, false, false, false, false, true); // S:aw (JViewport:JComponent, cq:JFrame) - Double Click
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "Customization Parameters ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "Customization Parameters", 0, false); // S:aw (JViewport:JComponent, cq:JFrame)
+selectTreeTable(PAResourceOtoP.ParameterFacetTable_PARAMETER_FACET_TABLE, "Customization Parameters ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "Customization Parameters", 0, false, false, false, false, false, true); // S:aw (JViewport:JComponent, cq:JFrame) - Double Click
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ao:v (JViewport:JComponent, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 78 seconds
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 45 MB. Current time: 9/12/17 2:30:09 PM JST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 78 MB (+2649kb) [00:09:26]
+// Elapsed time: 352 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem_init.v)]", 3, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem_init.v)]", 3, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("b16testmem_init.v", 216, 130); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - BusController16", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 4 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// [GUI Memory]: 83 MB (+724kb) [00:14:23]
+// [GUI Memory]: 87 MB (+57kb) [00:24:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 47 MB. Current time: 9/12/17 3:00:12 PM JST
+// [GUI Memory]: 92 MB (+191kb) [00:53:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 43 MB. Current time: 9/12/17 3:30:15 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 40 MB. Current time: 9/12/17 4:00:18 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 39 MB. Current time: 9/12/17 4:30:18 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 39 MB. Current time: 9/12/17 5:31:22 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 41 MB. Current time: 9/12/17 6:01:24 PM JST
+// Elapsed time: 12470 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// Elapsed time: 577 seconds
+selectCodeEditor("buscon16.v", 231, 153); // bl:J (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem_init.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 41 MB. Current time: 9/12/17 6:31:26 PM JST
+// Elapsed time: 1982 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom_18kb.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 42 MB. Current time: 9/12/17 7:01:28 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 42 MB. Current time: 9/13/17 1:25:14 PM JST
+// Elapsed time: 68634 seconds
+selectCodeEditor("b16rom_18kb.v", 608, 187); // bl:J (JPanel:JComponent, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 41 MB. Current time: 9/13/17 1:55:16 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 39 MB. Current time: 9/13/17 2:25:18 PM JST
+// Elapsed time: 2195 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cq:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (H:JPanel, b:g)
+// Elapsed time: 19 seconds
+setFileChooser("C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/btst.dat");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (H:JPanel, b:g)
+setFileChooser("C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/bram.dat");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (H:JPanel, b:g)
+setFileChooser("C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/bram.hex");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (H:JPanel, b:g)
+setFileChooser("C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/btst.hex");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'g' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // b:g (cq:JFrame)
+// bF:g (cq:JFrame):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/bram.hex C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/btst.hex C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/bram.dat C:/Vivado_projects/source_code/Geyser_mem_01/Init_bram/btst.dat} 
+dismissDialog("Add Sources"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("b16rom_18kb.v", 346, 245); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 135, 197); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 97 MB (+408kb) [24:01:36]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom_18kb.v)]", 2, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), TestMem16 - B16TestMem (b16testmem_init.v)]", 3, false); // y:k (I:JPanel, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem_init.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// [GUI Memory]: 102 MB (+119kb) [24:01:57]
+selectCodeEditor("b16testmem_init.v", 153, 142); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom_18kb.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem_init.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom_18kb.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom_18kb.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 410, 145); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 169, 127); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 360, 149); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 543, 317); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("b16rom_18kb.v", 171, 188); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("b16rom_18kb.v", 100, 389); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("b16rom_18kb.v", 94, 396); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem_init.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// [GUI Memory]: 107 MB (+240kb) [24:03:16]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom_18kb.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// [GUI Memory]: 113 MB (+942kb) [24:03:27]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectCodeEditor("b16rom_18kb.v", 199, 153); // bl:J (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16testmem.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - BusController16", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cq:JFrame)
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_3"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_3 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_3"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property description BusController16_v1_3 [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 5 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/Geyser_mem_01 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 119 MB (+3kb) [24:07:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 46 MB. Current time: 9/13/17 2:55:21 PM JST
+// Elapsed time: 3074 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+selectCodeEditor("buscon16.v", 137, 210); // bl:J (JPanel:JComponent, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 45 MB. Current time: 9/13/17 3:25:22 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 43 MB. Current time: 9/13/17 3:55:25 PM JST
+// Elapsed time: 3713 seconds
+selectCodeEditor("buscon16.v", 357, 407); // bl:J (JPanel:JComponent, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 43 MB. Current time: 9/13/17 4:25:27 PM JST
+// Elapsed time: 1431 seconds
+selectCodeEditor("buscon16.v", 360, 409); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 550, 325); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// Elapsed time: 19 seconds
+closeMainWindow("Geyser_mem_ver1.1 - [C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr] - Vivado 2015.4"); // cq:JFrame
+// G:aY (cq:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:aY)
+dismissDialog("Exit Vivado"); // G:aY (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 45 MB. Current time: 9/13/17 4:55:29 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 46 MB. Current time: 9/13/17 5:25:32 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 46 MB. Current time: 9/13/17 5:55:34 PM JST

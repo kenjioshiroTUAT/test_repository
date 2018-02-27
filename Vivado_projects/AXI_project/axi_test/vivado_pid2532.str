@@ -1,0 +1,1260 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 2532
+
+Current time: 	12/6/17 2:13:31 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=MS UI Gothic,name=MS UI Gothic,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Oshiro Kenji
+User home directory: C:/Users/Oshiro Kenji
+User working directory: C:/Vivado_projects/axi_test
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+Vivado preferences path: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 501 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Vivado_projects\axi_test\axi_test.xpr. Version: Vivado v2015.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Vivado_projects/axi_test/axi_test.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 35 MB (+33865kb) [00:00:07]
+// [Engine Memory]: 406 MB (+274098kb) [00:00:07]
+// Tcl Message: open_project C:/Vivado_projects/axi_test/axi_test.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code/axi_test_code'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+15788kb) [00:00:08]
+// [Engine Memory]: 428 MB (+1710kb) [00:00:08]
+// [Engine Memory]: 469 MB (+20466kb) [00:00:09]
+// [Engine Memory]: 498 MB (+5868kb) [00:00:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 33 MB. Current time: 12/6/17 2:13:31 PM JST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: axi_test; location: C:/Vivado_projects/axi_test; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 787.094 ; gain = 150.801 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// [GUI Memory]: 64 MB (+10563kb) [00:00:18]
+// [GUI Memory]: 72 MB (+4539kb) [00:00:23]
+// [Engine Memory]: 530 MB (+8010kb) [00:00:23]
+selectCodeEditor("buscon16.v", 263, 438); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 77 MB (+1681kb) [00:00:35]
+// Elapsed time: 19 seconds
+selectCodeEditor("buscon16.v", 424, 347); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 156, 512); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16.v", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 552 MB. GUI used memory: 38 MB. Current time: 12/6/17 2:14:05 PM JST
+selectCodeEditor("buscon16.v", 48, 504); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 46, 518); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 44, 533); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 43, 553); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 46, 573); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("buscon16.v", 255, 443); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 190, 433); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16.v", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 111, 415); // bl:J (JPanel:JComponent, cq:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk", true); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CoreClk"); // o:ao (ai:f, cq:JFrame)
+selectCodeEditor("buscon16.v", 232, 451); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 186, 475); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("buscon16.v", 27, 231); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition.. Note: All sources to be packaged must be located at or below the specified directory."); // b:a (a:H, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 10 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// [Engine Memory]: 570 MB (+13828kb) [00:01:57]
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code -vendor xilinx.com -library user -taxonomy /UserIP 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 44 MB. Current time: 12/6/17 2:15:26 PM JST
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Vivado_projects/source_code c:/Vivado_projects/source_code/axi_test_code} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bF:g (cq:JFrame):  Package IP : addNotify
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// a:a (cq:JFrame): Critical Messages: addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cq:JFrame)
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_2 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property description BusController16_v1_2 [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// bF:g (cq:JFrame):  Package IP : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code' 
+// a:a (cq:JFrame): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cq:JFrame)
+// [Engine Memory]: 603 MB (+4577kb) [00:02:41]
+// Elapsed time: 213 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao:v (JViewport:JComponent, cq:JFrame)
+// [GUI Memory]: 81 MB (+155kb) [00:06:12]
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ao:v (JViewport:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition.. Note: All sources to be packaged must be located at or below the specified directory."); // b:a (a:H, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+// [GUI Memory]: 86 MB (+1335kb) [00:06:55]
+// Elapsed time: 60 seconds
+setFolderChooser("C:/Vivado_projects/IP_DIR/axi_buscon16");
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 78 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - BusController16"); // aa:aO
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/IP_DIR/axi_buscon16 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/IP_DIR/axi_buscon16/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/IP_DIR/axi_buscon16 c:/Vivado_projects/IP_DIR/axi_buscon16/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 98 MB (+7337kb) [00:07:40]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+// [GUI Memory]: 106 MB (+3389kb) [00:07:41]
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 64 MB. Current time: 12/6/17 2:21:01 PM JST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (buscon16.v) elapsed time: 0.2s
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: current_project axi_test 
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: current_project tmp_edit_project 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 611 MB. GUI used memory: 63 MB. Current time: 12/6/17 2:21:14 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/ip_dir/axi_buscon16/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 14:21:18 2017... 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/vivado_projects/ip_dir/axi_buscon16 c:/Vivado_projects/source_code c:/Vivado_projects/source_code/axi_test_code} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Elapsed time: 48 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Elapsed time: 52 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/IP_DIR/axi_buscon");
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 22 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/IP_DIR/axi_buscon -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/IP_DIR/axi_buscon/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/IP_DIR/axi_buscon c:/Vivado_projects/IP_DIR/axi_buscon/component.xml 
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 76 MB. Current time: 12/6/17 2:23:21 PM JST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 634 MB (+415kb) [00:10:03]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_2 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_VENDOR_DISPLAY_NAME, (String) null); // k:ao (JPanel:JComponent, cq:JFrame)
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property description BusController16_v1_2 [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+closeMainWindow("tmp_edit_project - [c:/vivado_projects/ip_dir/axi_buscon/tmp_edit_project.xpr] - Vivado 2015.4"); // cq:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// aR:y (cq:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aR:y)
+// G:aY (cq:JFrame): Close Project: addNotify
+dismissDialog("Save Project"); // aR:y (cq:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // G:aY (cq:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 634 MB. GUI used memory: 67 MB. Current time: 12/6/17 2:23:46 PM JST
+// 'b' command handler elapsed time: 3 seconds
+// Tcl Message: close_project 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Close Project"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/ip_dir/axi_buscon/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 14:23:47 2017... 
+selectCodeEditor("buscon16.v", 361, 260); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/IP_DIR/axi_buscon");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 16 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/IP_DIR/axi_buscon -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/IP_DIR/axi_buscon/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/IP_DIR/axi_buscon c:/Vivado_projects/IP_DIR/axi_buscon/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+closeMainWindow("tmp_edit_project - [c:/vivado_projects/ip_dir/axi_buscon/tmp_edit_project.xpr] - Vivado 2015.4"); // cq:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:aY (cq:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // G:aY (cq:JFrame)
+// TclEventType: PROJECT_CLOSE
+// 'b' command handler elapsed time: 3 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 68 MB. Current time: 12/6/17 2:24:34 PM JST
+// Tcl Message: close_project 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Close Project"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/ip_dir/axi_buscon/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 14:24:34 2017... 
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 4 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// bF:g (cq:JFrame):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ao:v (JViewport:JComponent, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cq:JFrame)
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_2 [ipx::current_core] 
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_2"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property description BusController16_v1_2 [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Vivado_projects/source_code' 
+// a:a (cq:JFrame): Critical Messages: addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+dismissDialog("Critical Messages"); // a:a (cq:JFrame)
+// Elapsed time: 108 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition.. Note: All sources to be packaged must be located at or below the specified directory."); // b:a (a:H, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 17 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - BusController16"); // aa:aO
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [Engine Memory]: 683 MB (+18899kb) [00:14:43]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: current_project axi_test 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 86 MB. Current time: 12/6/17 2:28:07 PM JST
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: current_project tmp_edit_project 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 80 MB. Current time: 12/6/17 2:28:11 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 14:28:11 2017... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code 
+// Tcl Message: 0 
+// [GUI Memory]: 111 MB (+223kb) [00:36:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 76 MB. Current time: 12/6/17 2:58:15 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 73 MB. Current time: 12/6/17 3:28:18 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 69 MB. Current time: 12/6/17 3:58:21 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 68 MB. Current time: 12/6/17 4:28:24 PM JST
+// Elapsed time: 7662 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), B16AXI32 - BUS16AXI32CONTROL (buscon16axi32.v)]", 3, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), B16AXI32 - BUS16AXI32CONTROL (buscon16axi32.v)]", 3, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// Elapsed time: 49 seconds
+selectCodeEditor("buscon16axi32.v", 89, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 156, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 157, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 157, 298); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 159, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "TransAddress"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "TransAddress"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "TransAddress"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "TransAddress"); // o:ao (ai:f, cq:JFrame)
+// Elapsed time: 78 seconds
+selectCodeEditor("buscon16axi32.v", 110, 383); // bl:J (JPanel:JComponent, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CTLStart16"); // o:ao (ai:f, cq:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("buscon16axi32.v", 161, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 204, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 160, 295); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("buscon16axi32.v", 290, 370); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("buscon16axi32.v", 288, 385); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("buscon16axi32.v", 60, 246); // bl:J (JPanel:JComponent, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BC16Address"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BC16Address"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BC16Address"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BC16Address"); // o:ao (ai:f, cq:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BC16Address"); // o:ao (ai:f, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 159, 316); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("buscon16axi32.v", 54, 316); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16axi32.v", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 159, 418); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16axi32.v", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16axi32.v", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 131, 432); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("buscon16axi32.v", 213, 435); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "buscon16axi32.v", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 246, 437); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 237, 415); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 237, 415); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 239, 414); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 239, 416); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16axi32.v", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 117 MB (+357kb) [02:27:56]
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 19 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 47 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, av:a)
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "BusController16_v1_3"); // O:ao (am:N, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property display_name BusController16_v1_3 [ipx::current_core] 
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "BusController16_v1_3"); // O:ao (am:N, cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: set_property description BusController16_v1_3 [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 77 MB. Current time: 12/6/17 4:42:52 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 16:42:52 2017... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: 0 
+// Elapsed time: 644 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Dec 06 16:53:37 2017] Launched synth_1... Run output will be captured here: C:/Vivado_projects/axi_test/axi_test.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: RUN_FAILED
+selectCodeEditor("buscon16axi32.v", 212, 415); // bl:J (JPanel:JComponent, cq:JFrame)
+// X:G (cq:JFrame): Synthesis Failed: addNotify
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // h:JCheckBox (JPanel:JComponent, X:G): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // X:G (cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 207, 420); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Wed Dec 06 16:53:56 2017] Launched synth_1... Run output will be captured here: C:/Vivado_projects/axi_test/axi_test.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 34 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, X:G)
+dismissDialog("Synthesis Completed"); // X:G (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 9 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 84 MB. Current time: 12/6/17 4:54:53 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Dec 06 16:54:54 2017... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: 0 
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 76 MB. Current time: 12/8/17 1:40:44 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 73 MB. Current time: 12/8/17 2:10:48 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 73 MB. Current time: 12/8/17 2:40:51 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 74 MB. Current time: 12/8/17 3:10:54 PM JST
+// Elapsed time: 168210 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("buscon16.v", 51, 280); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 365, 299); // bl:J (JPanel:JComponent, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 74 MB. Current time: 12/8/17 3:40:58 PM JST
+// Elapsed time: 1482 seconds
+selectCodeEditor("buscon16.v", 366, 242); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom.v)]", 2, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v), BRAMBootROM16 - B16BootROM (b16rom.v)]", 2, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Data Files]", 8); // y:k (I:JPanel, cq:JFrame)
+selectCodeEditor("b16rom.v", 126, 318); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("buscon16.v", 377, 245); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 23 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 124 MB (+1224kb) [49:51:25]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 890.750 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 890.750 ; gain = 0.000 
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: DG_UPDATE_GRAPH
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// ui.g.e: ERROR(Package IP Updating IP instances...): Another long task is already running: ui.g.e: Previous LongTask(Update Design Hierarchy Updating Design Hierarchy) stack:  	at ui.b.c.bF.dxg(SourceFile:540) 	at ui.views.m.V.run(SourceFile:546) 	at ui.data.design.o.cx(SourceFile:169) 	at ui.g.aa.actionPerformed(SourceFile:62) 	at javax.swing.Timer.fireActionPerformed(Timer.java:313) 	at ui.g.Z.fireActionPerformed(SourceFile:105) 	at javax.swing.Timer$DoPostEvent.run(Timer.java:245) 	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) 	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) 	at java.awt.EventQueue.access$500(EventQueue.java:97) 	at java.awt.EventQueue$3.run(EventQueue.java:709) 	at java.aw
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 84 MB. Current time: 12/8/17 4:05:07 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Fri Dec 08 16:05:08 2017... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: 0 
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 79 MB. Current time: 12/8/17 4:35:08 PM JST
+// Elapsed time: 2124 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectCodeEditor("buscon16.v", 277, 79); // bl:J (JPanel:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 9 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/vivado_projects/ip_dir/axi_buscon16'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// av:a (cq:JFrame): Package IP: addNotify
+dismissDialog("IP Packager"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cq:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cq:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bF:g (cq:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 88 MB. Current time: 12/8/17 4:41:23 PM JST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // av:a (cq:JFrame)
+dismissDialog("Package IP"); // bF:g (cq:JFrame)
+// Tcl Message: ****** Webtalk v2015.4 (64-bit)   **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source c:/vivado_projects/source_code/axi_test_code/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Fri Dec 08 16:41:24 2017... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Vivado_projects/source_code/axi_test_code 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: 0 
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 84 MB. Current time: 12/8/17 5:11:26 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 83 MB. Current time: 12/8/17 5:41:29 PM JST
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 82 MB. Current time: 12/11/17 10:49:46 AM JST
+// Elapsed time: 238219 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 53, 382); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16axi32.v", 329, 382); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 89 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "b16rom.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "buscon16axi32.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 83 MB. Current time: 12/11/17 11:19:47 AM JST
+// Elapsed time: 1842 seconds
+selectCodeEditor("buscon16.v", 376, 282); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectCodeEditor("buscon16.v", 455, 419); // bl:J (JPanel:JComponent, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // aa:JMenu (JPopupMenu:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package IP..."); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// P:g (cq:JFrame): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// bF:g (P:g):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+dismissDialog("Analyze source files for top modules"); // bF:g (P:g)
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // r:a (ak:JPanel, P:g)
+// Elapsed time: 13 seconds
+setFolderChooser("C:/Vivado_projects/source_code/axi_test_code");
+selectButton("PAResourceItoN.NewIpWizard_PROJECT_SOURCE_FILES_WILL_BE_COPIED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+selectButton("PAResourceItoN.NewIpWizard_IP_DEFINITION_ALREADY_EXISTS_IN_Overwrite", "Overwrite"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, P:g)
+// 'r' command handler elapsed time: 20 seconds
+dismissDialog("Create and Package New IP"); // P:g (cq:JFrame)
+// bF:g (cq:JFrame):  IP Packager : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: ipx::package_project -root_dir C:/Vivado_projects/source_code/axi_test_code -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force 
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: INFO: [IP_Flow 19-2228] Inferred bus interface "Reset_" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "reset_n" of definition type "xilinx.com:signal:reset:1.0". INFO: [IP_Flow 19-2228] Inferred bus interface "Clk" of definition type "xilinx.com:signal:clock:1.0". 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: ipx::unload_core c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Vivado_projects/source_code/axi_test_code c:/Vivado_projects/source_code/axi_test_code/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 

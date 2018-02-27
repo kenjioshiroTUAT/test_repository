@@ -1,0 +1,109 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 12228
+
+Current time: 	11/21/17 4:06:55 PM JST
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=MS UI Gothic,name=MS UI Gothic,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Oshiro Kenji
+User home directory: C:/Users/Oshiro Kenji
+User working directory: C:/Vivado_projects/Geyser_mem_ver1.1
+User country: 	JP
+User language: 	ja
+User locale: 	ja_JP
+
+Vivado preferences path: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Oshiro Kenji/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	173 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 409 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 39 MB (+38788kb) [00:00:12]
+// [Engine Memory]: 351 MB (+216365kb) [00:00:12]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Vivado_projects\Geyser_mem_ver1.1\Geyser_mem_ver1.1.xpr. Version: Vivado v2015.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Vivado_projects/Geyser_mem_ver1.1/Geyser_mem_ver1.1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_projects/source_code/Geyser_mem_01'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 418 MB. GUI used memory: 29 MB. Current time: 11/21/17 4:06:57 PM JST
+// [Engine Memory]: 418 MB (+51819kb) [00:00:17]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+5762kb) [00:00:19]
+// [Engine Memory]: 454 MB (+16080kb) [00:00:20]
+// [Engine Memory]: 484 MB (+7184kb) [00:00:21]
+// [GUI Memory]: 50 MB (+1175kb) [00:00:21]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 54 MB (+1064kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Geyser_mem_ver1.1; location: C:/Vivado_projects/Geyser_mem_ver1.1; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 734.277 ; gain = 137.246 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 57 MB (+93kb) [00:01:02]
+// [Engine Memory]: 511 MB (+3147kb) [00:01:48]
+// Elapsed time: 86 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BusController16 (buscon16.v)]", 1, true, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 513 MB. GUI used memory: 37 MB. Current time: 11/21/17 4:08:32 PM JST
+// Elapsed time: 61 seconds
+selectCodeEditor("buscon16.v", 53, 229); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 60 MB (+936kb) [00:02:53]
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ID_BRAM"); // o:ao (ai:f, cq:JFrame)
+// [GUI Memory]: 65 MB (+1960kb) [00:03:20]
+// Elapsed time: 25 seconds
+selectCodeEditor("buscon16.v", 56, 314); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 69 MB (+515kb) [00:03:22]
+// Elapsed time: 21 seconds
+selectCodeEditor("buscon16.v", 56, 347); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 74 MB (+1516kb) [00:03:47]
+// Elapsed time: 55 seconds
+selectCodeEditor("buscon16.v", 116, 249); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 78 MB (+219kb) [00:04:57]
+// Elapsed time: 20 seconds
+selectCodeEditor("buscon16.v", 55, 178); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 266, 176); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 98, 180); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("buscon16.v", 358, 468, false, false, false, true, false); // bl:J (JPanel:JComponent, cq:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_REPLACE_TEXT, "Replace..."); // ae:JMenuItem (al:JPopupMenu, Popup:JWindow)
+// [GUI Memory]: 86 MB (+3909kb) [00:05:41]
+// Elapsed time: 26 seconds
+selectComboBox("FindAndReplaceDialog:StandardDialog_Replace with:", "ID_SHEREDMEM", -1); // JComboBox:JComponent (JPanel:JComponent, FindAndReplaceDialog:StandardDialog)
+selectButton("FindAndReplaceDialog:StandardDialog_Find", "Find"); // JButton:AbstractButton (ButtonPanel:JPanel, FindAndReplaceDialog:StandardDialog)
+selectCodeEditor("buscon16.v", 410, 457); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("buscon16.v", 105, 197); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "buscon16.v", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
